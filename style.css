@@ -1,0 +1,155 @@
+/* Navigation */
+.main-navigation .primary-menu > li > a {
+  color: var(--gp-neutral-white);
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.main-navigation .primary-menu > li > a:hover {
+  color: var(--gp-accent-teal);
+}
+
+.main-navigation .primary-menu > li.current-menu-item > a {
+  color: var(--gp-accent-purple);
+}
+
+/* Hero Section */
+.home-hero {
+  background: linear-gradient(135deg, var(--gp-primary-dark) 0%, var(--gp-secondary-dark) 100%);
+  color: var(--gp-neutral-white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-hero p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+/* AdSense Ready Areas */
+.ad-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.ad-container-header {
+  margin-bottom: 2rem;
+}
+
+.ad-container-footer {
+  margin-top: 2rem;
+}
+
+.ad-container-sidebar {
+  margin-bottom: 2rem;
+}
+
+.ad-container-content {
+  margin: 2rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .home-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+  
+  .home-hero h1 {
+    font-size: 2.25rem;
+  }
+  
+  .home-hero p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: var(--gp-dark-bg);
+  color: var(--gp-dark-text);
+}
+
+body.dark-mode .site-header,
+body.dark-mode .site-footer {
+  background-color: var(--gp-neutral-dark);
+}
+
+body.dark-mode .post-card,
+body.dark-mode .category-card {
+  background-color: var(--gp-dark-surface);
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.dark-mode-toggle-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.dark-mode-toggle-text {
+  font-size: 0.9rem;
+}
+
+/* Custom Styles for Kadence Integration */
+.content-area {
+  margin-top: 2rem;
+}
+
+.entry-content {
+  margin-top: 1.5rem;
+}
+
+.wp-block-kadence-rowlayout {
+  margin-bottom: 2rem;
+}
